@@ -14,6 +14,7 @@
 		EBE292411E0ACADF0000762E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBE2923F1E0ACADF0000762E /* LaunchScreen.storyboard */; };
 		EBE2924C1E0ACADF0000762E /* _07_____Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE2924B1E0ACADF0000762E /* _07_____Tests.swift */; };
 		EBE292571E0ACADF0000762E /* _07_____UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE292561E0ACADF0000762E /* _07_____UITests.swift */; };
+		EBE292651E0C1AA80000762E /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE292641E0C1AA80000762E /* Bundle+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		EBE292521E0ACADF0000762E /* 007-放射机制UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "007-放射机制UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE292561E0ACADF0000762E /* _07_____UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_07_____UITests.swift"; sourceTree = "<group>"; };
 		EBE292581E0ACADF0000762E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBE292641E0C1AA80000762E /* Bundle+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				EBE292361E0ACADF0000762E /* AppDelegate.swift */,
 				EBE292381E0ACADF0000762E /* ViewController.swift */,
+				EBE292641E0C1AA80000762E /* Bundle+Extension.swift */,
 				EBE2923A1E0ACADF0000762E /* Main.storyboard */,
 				EBE2923D1E0ACADF0000762E /* Assets.xcassets */,
 				EBE2923F1E0ACADF0000762E /* LaunchScreen.storyboard */,
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBE292391E0ACADF0000762E /* ViewController.swift in Sources */,
+				EBE292651E0C1AA80000762E /* Bundle+Extension.swift in Sources */,
 				EBE292371E0ACADF0000762E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,6 +516,7 @@
 				EBE2925D1E0ACADF0000762E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EBE2925E1E0ACADF0000762E /* Build configuration list for PBXNativeTarget "007-放射机制Tests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +525,7 @@
 				EBE292601E0ACADF0000762E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EBE292611E0ACADF0000762E /* Build configuration list for PBXNativeTarget "007-放射机制UITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +534,7 @@
 				EBE292631E0ACADF0000762E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

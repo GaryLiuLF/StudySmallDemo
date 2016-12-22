@@ -36,20 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow()
         window?.backgroundColor = UIColor.white
         
-        // 获取info.plist数据
-        // Product Name / 版本 是记录在 info.plist
-        // [String :AnyObjext?]
-        print(Bundle.main.infoDictionary)
-        
-        // 解包
-        // 1. 因为字典是可选的， 因此需要解包在取值 如果 字典为nil，就取不到值
-        // 2. 通过key从字典中取值，如果 key 错了，就没有值了
-        // AnyObject? 表示不一定能够获取到值
-        let ns = Bundle.main.infoDictionary?["CFBundleName"] as? String ?? ""
-        
-        // 2. 设置根控制器 , 需要添加命名空间 -> 默认就是项目名称（名称最好不要有数字和特殊符号）
-        // let clsName = "007-放射机制.ViewController"
-        let clsName = ns + "." + "ViewController"
+        let clsName = Bundle.main.namespace() + "." + "ViewController"
         // AntClass? -> 视图控制器的类型
         let cls = NSClassFromString(clsName) as? UIViewController.Type
         
