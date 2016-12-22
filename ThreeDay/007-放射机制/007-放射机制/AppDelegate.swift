@@ -36,7 +36,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow()
         window?.backgroundColor = UIColor.white
         
-        let clsName = Bundle.main.namespace() + "." + "ViewController"
+        // let clsName = Bundle.main.namespace() + "." + "ViewController"
+        let clsName = Bundle.main.namespace + "." + "ViewController"
         // AntClass? -> 视图控制器的类型
         let cls = NSClassFromString(clsName) as? UIViewController.Type
         

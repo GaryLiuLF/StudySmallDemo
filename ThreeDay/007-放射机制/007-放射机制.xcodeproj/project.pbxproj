@@ -15,6 +15,8 @@
 		EBE2924C1E0ACADF0000762E /* _07_____Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE2924B1E0ACADF0000762E /* _07_____Tests.swift */; };
 		EBE292571E0ACADF0000762E /* _07_____UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE292561E0ACADF0000762E /* _07_____UITests.swift */; };
 		EBE292651E0C1AA80000762E /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE292641E0C1AA80000762E /* Bundle+Extension.swift */; };
+		EBE292691E0C1D960000762E /* DemoObj.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE292681E0C1D960000762E /* DemoObj.m */; };
+		EBE2926C1E0C1F610000762E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE2926B1E0C1F610000762E /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,10 @@
 		EBE292561E0ACADF0000762E /* _07_____UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "_07_____UITests.swift"; sourceTree = "<group>"; };
 		EBE292581E0ACADF0000762E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBE292641E0C1AA80000762E /* Bundle+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		EBE292661E0C1D960000762E /* 007-放射机制-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "007-放射机制-Bridging-Header.h"; sourceTree = "<group>"; };
+		EBE292671E0C1D960000762E /* DemoObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoObj.h; sourceTree = "<group>"; };
+		EBE292681E0C1D960000762E /* DemoObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoObj.m; sourceTree = "<group>"; };
+		EBE2926B1E0C1F610000762E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBE2926C1E0C1F610000762E /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +90,7 @@
 				EBE2924A1E0ACADF0000762E /* 007-放射机制Tests */,
 				EBE292551E0ACADF0000762E /* 007-放射机制UITests */,
 				EBE292341E0ACADF0000762E /* Products */,
+				EBE2926A1E0C1F610000762E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,10 +110,13 @@
 				EBE292361E0ACADF0000762E /* AppDelegate.swift */,
 				EBE292381E0ACADF0000762E /* ViewController.swift */,
 				EBE292641E0C1AA80000762E /* Bundle+Extension.swift */,
+				EBE292671E0C1D960000762E /* DemoObj.h */,
+				EBE292681E0C1D960000762E /* DemoObj.m */,
 				EBE2923A1E0ACADF0000762E /* Main.storyboard */,
 				EBE2923D1E0ACADF0000762E /* Assets.xcassets */,
 				EBE2923F1E0ACADF0000762E /* LaunchScreen.storyboard */,
 				EBE292421E0ACADF0000762E /* Info.plist */,
+				EBE292661E0C1D960000762E /* 007-放射机制-Bridging-Header.h */,
 			);
 			path = "007-放射机制";
 			sourceTree = "<group>";
@@ -126,6 +137,14 @@
 				EBE292581E0ACADF0000762E /* Info.plist */,
 			);
 			path = "007-放射机制UITests";
+			sourceTree = "<group>";
+		};
+		EBE2926A1E0C1F610000762E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBE2926B1E0C1F610000762E /* UIKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,8 +215,9 @@
 				TargetAttributes = {
 					EBE292321E0ACADF0000762E = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = XL372J3848;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 27CBEDY8VV;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Manual;
 					};
 					EBE292461E0ACADF0000762E = {
 						CreatedOnToolsVersion = 8.1;
@@ -265,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBE292691E0C1D960000762E /* DemoObj.m in Sources */,
 				EBE292391E0ACADF0000762E /* ViewController.swift in Sources */,
 				EBE292651E0C1AA80000762E /* Bundle+Extension.swift in Sources */,
 				EBE292371E0ACADF0000762E /* AppDelegate.swift in Sources */,
@@ -417,11 +438,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = XL372J3848;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 27CBEDY8VV;
 				INFOPLIST_FILE = "007-放射机制/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.winsafe.gary.-07-----";
 				PRODUCT_NAME = "反射机制";
+				PROVISIONING_PROFILE = "f1f04f6c-ae0d-4392-920b-f77596354b68";
+				PROVISIONING_PROFILE_SPECIFIER = winsafe_development_profile;
+				SWIFT_OBJC_BRIDGING_HEADER = "007-放射机制/007-放射机制-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -430,11 +456,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = XL372J3848;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 27CBEDY8VV;
 				INFOPLIST_FILE = "007-放射机制/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.winsafe.gary.-07-----";
 				PRODUCT_NAME = "反射机制";
+				PROVISIONING_PROFILE = "f1f04f6c-ae0d-4392-920b-f77596354b68";
+				PROVISIONING_PROFILE_SPECIFIER = winsafe_development_profile;
+				SWIFT_OBJC_BRIDGING_HEADER = "007-放射机制/007-放射机制-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
